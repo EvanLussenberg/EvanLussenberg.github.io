@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0076)file:///C:/Users/LENOVO/Documents/GitHub/EvanLussenberg.github.io/index.html -->
+<!-- saved from url=(0033)https://evanlussenberg.github.io/ -->
 <html lang="en" dir="ltr" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
                     
                     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -362,7 +362,7 @@
 {
     visibility: hidden !important;
 }
-</style><script src="./index_files/web-vitals.base.iife(3).js.unduhan"></script><script src="./index_files/web-vitals.base.iife(4).js.unduhan"></script><script src="./index_files/web-vitals.base.iife(5).js.unduhan"></script><script src="./index_files/web-vitals.base.iife(6).js.unduhan"></script></head>
+</style><script src="./index_files/web-vitals.base.iife(3).js.unduhan"></script><script src="./index_files/web-vitals.base.iife(4).js.unduhan"></script><script src="./index_files/web-vitals.base.iife(5).js.unduhan"></script><script src="./index_files/web-vitals.base.iife(6).js.unduhan"></script><script src="./index_files/web-vitals.base.iife(7).js.unduhan"></script></head>
               
                 <body class="">
                     	
@@ -393,9 +393,7 @@
             </a>
         </div>
                                   
-                                    <audio autoplay="" controls="" src="mymusic.mp3">
-  Your browser does not support the audio element.
-</audio><div class="d-flex align-items-center mx-2 justify-content-end" style="flex: 1; width: 0; color: ; fill: ;">
+                                    <div class="d-flex align-items-center mx-2 justify-content-end" style="flex: 1; width: 0; color: ; fill: ;">
                                         
             <nav class="bb-desktop-nav" role="navigation" style="opacity: 1;">
                 <ul class="d-flex mx-n2 flex-row" role="menu" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
@@ -551,9 +549,24 @@
                     
                     <a href="file:///C:/Users/LENOVO/Downloads/Website/index.html#" data-anchor="97DE7937-FEA2-1FF6-EFCE-E34A59863A01">
                 
-                    <button type="button" class="btn  btn-primary">
-                        Our Journey =&gt;
+                    <button id="ASong" onclick="playPause()" type="button" class="btn  btn-primary">
+    <audio src="mymusic.mp3" autoplay="" loop=""></audio>
+                        Click and Watch =&gt;
                     </button>
+    <script>
+  var aud = document.getElementById("ASong").children[0];
+  var isPlaying = false;
+  aud.pause();
+
+  function playPause() {
+    if (isPlaying) {
+      aud.pause();
+    } else {
+      aud.play();
+    }
+    isPlaying = !isPlaying;
+  }
+</script>
                 
                     </a>
                 
@@ -964,5 +977,6 @@
                 
             
         
+
 
 </body></html>
